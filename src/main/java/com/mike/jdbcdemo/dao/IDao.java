@@ -1,4 +1,4 @@
 package com.mike.jdbcdemo.dao;
 
-public class win7dao {
+public interface IDao {
 }
