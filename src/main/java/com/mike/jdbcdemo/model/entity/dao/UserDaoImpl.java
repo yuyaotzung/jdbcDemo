@@ -1,6 +1,6 @@
-package com.mike.jdbcdemo.dao;
+package com.mike.jdbcdemo.model.entity.dao;
 
-import com.mike.jdbcdemo.entity.User;
+import com.mike.jdbcdemo.model.entity.User;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.jdbc.core.namedparam.NamedParameterJdbcTemplate;
 import org.springframework.stereotype.Component;
@@ -9,7 +9,7 @@ import java.util.HashMap;
 import java.util.Map;
 
 @Component
-public class Win7dao {
+public class UserDaoImpl implements IDao {
 
     @Autowired
     private NamedParameterJdbcTemplate namedParameterJdbcTemplate;

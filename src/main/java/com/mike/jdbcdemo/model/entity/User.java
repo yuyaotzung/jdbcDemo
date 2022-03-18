@@ -1,4 +1,4 @@
-package com.mike.jdbcdemo.entity;
+package com.mike.jdbcdemo.model.entity;
 
 import lombok.Data;
 
