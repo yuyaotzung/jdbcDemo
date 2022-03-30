@@ -9,14 +9,14 @@ import java.util.HashMap;
 import java.util.Map;
 
 @Component
-public class UserDaoImpl implements IDao {
+public class UserDaoImpl implements IDao<User> {
 
     @Autowired
     private NamedParameterJdbcTemplate namedParameterJdbcTemplate;
 
     public User findByKey(Integer userKey){
         StringBuilder sql = new StringBuilder("select id,name from ");
-        Map<String,Integer> paramMap = new HashMap<String,Integer>();
+        Map<String,Object> paramMap = new HashMap<>();
         paramMap.put("userKey",userKey);
         User User = new User();
         User.setUserKey(1);
@@ -24,5 +24,8 @@ public class UserDaoImpl implements IDao {
         User.setCompanyId("88720124");
         //user User = namedParameterJdbcTemplate.query(sql,paramMap,);
         return User;
+    }
+    public User findById(String Id){
+        return null;
     }
 }
