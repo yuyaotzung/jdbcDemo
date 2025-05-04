@@ -20,10 +20,8 @@
 					<bottomPen lineWidth="1.0" lineStyle="Solid" lineColor="#000000"/>
 					<rightPen lineWidth="1.0" lineStyle="Solid" lineColor="#000000"/>
 				</box>
-				<textElement markup="html">
-					<font size="16"/>
-				</textElement>
-				<textFieldExpression><![CDATA["透過上一篇<u>基礎元件</u>的介紹，我們知道一個<u><i><b>JasperReport</b></i></u>報表中可以有多個Detail的Band，但是卻共用一個主資料來源，<br>多個Detail是共用這個<font color=\"red\" face=\"標楷體\">主資料來源</font>。查看Paramter和Field發現他們都支援java.util.List類型。<br>那我們可不可以用一個List類型的Paramter做老師的資料來源，一個List類型的Field來做學生的資料來源，<br>這樣就解決了<font color=\"red\" face=\"標楷體\">"+$P{Parameter1}+"</font>的問題。"]]></textFieldExpression>
+				<textElement markup="html"/>
+				<textFieldExpression><![CDATA["透過上一篇<u>基礎元件</u>的介紹，我們知道一個<u><i><b>JasperReport</b></i></u>報表中可以有<font size=\"18\">多個</font>Detail的Band，但是卻共用一個主資料來源，<br>多個Detail是共用這個<font color=\"red\" face=\"標楷體\">主資料來源</font>。查看Paramter和Field發現他們都支援java.util.List類型。<br>那我們可不可以用一個List類型的Paramter做老師的資料來源，一個List類型的Field來做學生的資料來源，<br>這樣就解決了<font color=\"red\" face=\"標楷體\">"+$P{Parameter1}+"</font>的問題。"]]></textFieldExpression>
 			</textField>
 		</band>
 	</pageHeader>
